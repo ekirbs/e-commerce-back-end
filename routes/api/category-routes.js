@@ -47,10 +47,11 @@ router.post('/', async (req, res) => {
 // UPDATE CATEGORY BY ID
 router.put('/:id', async (req, res) => {
   try {
-    const categoryData = await Category.create({
-      id: req.body.id,
-      category_name: req.body.category_name,
-    });
+    const categoryData = await Category.update(req.body, {
+        where: {
+          id: req.params.id
+        }
+      });
     if (!categoryData[0]) {
       res.status(404).json({ message: "No category with this id!"});
     };
