@@ -35,9 +35,10 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ![alt text](assets/images/screenshot.png)
     ```
 
-[![Tutorial](./assets/images/sql-tutor-img.png)]()
+[![MySQL Tutorial](./assets/images/mysql-tutor-img.png)]()
+<br>
+[![Insomnia Tutorial](./assets/images/insomnia-tutor-img.png)]()
 
-![Tutorial GIF.](./public/assets/images/tutor-gif.gif)
 
 ## Credits
 
