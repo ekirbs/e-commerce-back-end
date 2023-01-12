@@ -2,19 +2,11 @@
 
 ## Description
 
-A back end application for an e-commerce site.
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Welcome to my E-Commerce Back End program!  This is a back end application for a mock e-commerce site that processes requests to manipulate a database in different ways.  I created this application to practice my abilities to create MODELS to define the stored data, and ROUTES that define the accepted types and natures of requests, actions, and responses.  Another valuable skill this project helped me improve is my further undertsanding of file structure to present a cleaner and more intuitive application.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+Main Github Link: [Github Repo](https://github.com/ekirbs/e-commerce-back-end 'A back end application for an e-commerce site.')
 
-Link: [Application Name](https://ekirbs.github.io/resources/ 'One sentence description of the app.')
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -23,17 +15,20 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+* Uses Node Package Manager (npm).
+
+* Uses the [MySQL2 package](https://www.npmjs.com/package/mysql2) to connect to a MySQL database.
+
+* Uses the [Sequelize](https://www.npmjs.com/package/sequelize) package.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Once all the required dependencies are installed, the database needs to be initialized.  open the  integrated terminal and access mysql [mysql -u root (-p)], and copy/paste the contents of the schema.sql file in the db folder into the terminal.  The company_db database will be created (careful: any existing db of that name will be deleted first).  Then quit out and type npm run seed to seed the database.  Finally, type npm start to start the program, then open in insomnia.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+In insomnia, you are going to create GET, POST, PUT, and DELETE requests to interact with the database.  Any information sent in a request needs to have the correct URL path or it will return error messages.   To search by ID, the correct id number will need to be added to the end fo the route (Each item in a table has a unique id).
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+Watch the tutorial video below in the readme for assistance on the pathing and insomnia setup.  Enjoy!
+
 
 CLICK ON THE IMAGES TO WATCH THE TUTORIAL VIDEOS!!!
 [![MySQL Tutorial](./assets/images/mysql-tutor-img.png)](https://user-images.githubusercontent.com/117387546/211961108-1405cb93-5f10-4931-81fd-334ac49951bf.mp4)
@@ -43,34 +38,8 @@ CLICK ON THE IMAGES TO WATCH THE TUTORIAL VIDEOS!!!
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+N/A
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+N/A
